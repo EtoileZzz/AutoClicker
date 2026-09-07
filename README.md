@@ -26,37 +26,6 @@
 - Python 3.12（使用 Tkinter，官方 Windows 安装包自带）
 - OCR 使用 Windows.Media.Ocr，需要系统已安装中文（zh-CN）OCR 语言包
 
-## 快速开始（源码运行）
-
-```powershell
-git clone https://github.com/EtoileZzz/AutoClicker.git
-cd <AutoClicker>
-
-# 安装依赖（OCR + PyInstaller 可选；主程序核心为 Python 标准库）
-python -m pip install -r requirements.txt
-
-# 直接运行
-python auto_clicker.py
-```
-
-> 若未安装 OCR 依赖，程序仍可正常点击/滚轮；只有启用 OCR 校验时才需要。
-
-## 打包 exe
-
-```powershell
-python -m pip install -r requirements-build.txt
-python -m PyInstaller --noconfirm --clean --onefile --windowed `
-  --name AutoClicker `
-  --hidden-import winrt.runtime `
-  --hidden-import winrt.windows.media.ocr `
-  --hidden-import winrt.windows.globalization `
-  --hidden-import winrt.windows.graphics.imaging `
-  --hidden-import winrt.windows.storage.streams `
-  --hidden-import winrt.windows.foundation `
-  auto_clicker.py
-```
-
-也可以直接执行仓库中的 `build_exe.ps1`。
 
 ## 快捷键
 
