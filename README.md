@@ -56,7 +56,7 @@
 ## 配置保存位置
 
 程序会在 exe / 源码同目录生成 `auto_clicker_presets.json` 自动保存全部预设。
-仓库提供空配置示例：`auto_clicker_presets.example.json`，首次运行未生成配置时
+首次运行未生成配置时
 会自动创建 7 个空预设。
 
 ## 安全与合规说明
