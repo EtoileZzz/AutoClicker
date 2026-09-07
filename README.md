@@ -29,8 +29,8 @@
 ## 快速开始（源码运行）
 
 ```powershell
-git clone https://github.com/<你的用户名>/<仓库名>.git
-cd <仓库名>
+git clone https://github.com/EtoileZzz/AutoClicker.git
+cd <AutoClicker>
 
 # 安装依赖（OCR + PyInstaller 可选；主程序核心为 Python 标准库）
 python -m pip install -r requirements.txt
@@ -95,15 +95,6 @@ python -m PyInstaller --noconfirm --clean --onefile --windowed `
 - 自动模拟输入可能违反部分软件的用户协议，请只在你有权限的软件/环境使用。
 - 作者不对因使用本工具导致的封号、数据丢失等后果负责。
 
-## 项目结构
-
-```text
-auto_clicker.py         主程序（单文件实现）
-requirements.txt        OCR 可选依赖
-requirements-build.txt  exe 打包依赖
-build_exe.ps1           Windows exe 打包脚本
-.github/workflows/build.yml  GitHub Actions 自动打包
-```
 
 ## 开源协议
 
